@@ -6,7 +6,7 @@
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/js-launchdarkly-provider",
+        "outputPath": "node_modules/@openfeature/js-launchdarkly-provider",
         "main": "packages/js-launchdarkly-provider/src/index.ts",
         "tsConfig": "packages/js-launchdarkly-provider/tsconfig.lib.json",
         "assets": ["packages/js-launchdarkly-provider/*.md"]

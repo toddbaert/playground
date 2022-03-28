@@ -6,7 +6,7 @@
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/openfeature-js",
+        "outputPath": "node_modules/@openfeature/openfeature-js",
         "main": "packages/openfeature-js/src/index.ts",
         "tsConfig": "packages/openfeature-js/tsconfig.lib.json",
         "assets": ["packages/openfeature-js/*.md"]
