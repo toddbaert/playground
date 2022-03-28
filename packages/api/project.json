@@ -102,9 +102,6 @@
   },
   "tags": [],
   "implicitDependencies": [
-    "js-env-provider",
-    "js-cloudbees-provider",
-    "js-launchdarkly-provider",
-    "js-split-provider"
+    "js-launchdarkly-provider"
   ]
 }
