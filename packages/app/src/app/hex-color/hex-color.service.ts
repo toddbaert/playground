@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Client, FlagEvaluationDetails } from '@openfeature/openfeature-js';
-import { OPENFEATURE_CLIENT, REQUEST_DATA } from '../constants';
+import { OPENFEATURE_CLIENT } from '../constants';
 
 @Injectable()
 export class HexColorService {
