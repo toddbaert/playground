@@ -7,14 +7,13 @@ import { RequestData } from '../types';
 export class MessageService {
   constructor(
     @Inject(OPENFEATURE_CLIENT) private client: Client,
-    @Inject(REQUEST_DATA) private attributes: RequestData
+    @Inject(REQUEST_DATA) private context: RequestData
   ) {}
 
   async getMessage() {
     const message = (await this.client.getBooleanValue(
       'new-welcome-message',
-      false,
-      this.attributes
+      false
     ))
       ? 'Welcome to Fib3r: Fibonacci as a Service!'
       : 'Welcome to FaaS: Fibonacci as a Service!';
