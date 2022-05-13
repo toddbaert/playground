@@ -19,14 +19,17 @@ export class HexColorService {
               hookContext,
               evaluationDetails: FlagEvaluationDetails<string>
             ) => {
-              // validate the hex value.
+              // validate the hex value
               const hexPattern = /[0-9A-Fa-f]{6}/g;
               if (hexPattern.test(evaluationDetails.value)) {
+                // return the valid value
                 return evaluationDetails.value;
               } else {
                 console.warn(
                   `Got invalid flag value '${evaluationDetails.value}' for ${hookContext.flagKey}, returning ${hookContext.defaultValue}`
                 );
+
+                // return the default value
                 return hookContext.defaultValue;
               }
             },
